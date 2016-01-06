@@ -52,7 +52,7 @@
 		<property name="entityManagerFactory" ref="entityManagerFactory" />
 	</bean>
 
-	<jpa:repositories base-package="icity.cgmp" 
+	<jpa:repositories base-package="icity.cgmp"
 		entity-manager-factory-ref="entityManagerFactory">
 	</jpa:repositories>
 
@@ -62,6 +62,7 @@
 		<property name="packagesToScan">
 			<array>
 				<value>icity.cgmp.info</value>
+				<value>icity.cgmp.test</value>
 			</array>
 		</property>
 		<property name="jpaVendorAdapter">

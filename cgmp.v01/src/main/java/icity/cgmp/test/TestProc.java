@@ -6,8 +6,6 @@ import org.apache.commons.lang.RandomStringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import icity.cgmp.info.TestUserInfo;
-
 @Component
 public class TestProc {
 

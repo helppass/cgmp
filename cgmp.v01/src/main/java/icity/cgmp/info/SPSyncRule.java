@@ -8,12 +8,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "t_test_user")
-public class TestUserInfo {
+@Table(name = "t_sp_sync_rule")
+public class SPSyncRule {
 
 	private long id;
 
-	private String username;
+	private String name;
 
 	/**
 	 * 获取 id
@@ -28,13 +28,13 @@ public class TestUserInfo {
 	}
 
 	/**
-	 * 获取 username
+	 * 获取 name
 	 * 
-	 * @return username
+	 * @return name
 	 */
-	@Column(name = "username")
-	public String getUsername() {
-		return username;
+	@Column(name = "name")
+	public String getName() {
+		return name;
 	}
 
 	/**
@@ -48,12 +48,13 @@ public class TestUserInfo {
 	}
 
 	/**
-	 * 设置 username
+	 * 设置 name
 	 * 
-	 * @param username
-	 *            username
+	 * @param name
+	 *            name
 	 */
-	public void setUsername(String username) {
-		this.username = username;
+	public void setName(String name) {
+		this.name = name;
 	}
+
 }
