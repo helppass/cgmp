@@ -11,9 +11,45 @@ import javax.persistence.Table;
 @Table(name = "t_cp_info")
 public class CPInfo {
 
+	private String contractStartTime;
+
+	private int contractStatus;
+
+	private String contractStopTime;
+
 	private long id;
 
 	private String name;
+
+	/**
+	 * 获取 contractStartTime
+	 * 
+	 * @return contractStartTime
+	 */
+	@Column(name = "contract_start_time")
+	public String getContractStartTime() {
+		return contractStartTime;
+	}
+
+	/**
+	 * 获取 contractStatus
+	 * 
+	 * @return contractStatus
+	 */
+	@Column(name = "contract_status")
+	public int getContractStatus() {
+		return contractStatus;
+	}
+
+	/**
+	 * 获取 contractStopTime
+	 * 
+	 * @return contractStopTime
+	 */
+	@Column(name = "contract_stop_time")
+	public String getContractStopTime() {
+		return contractStopTime;
+	}
 
 	/**
 	 * 获取 id
@@ -21,8 +57,8 @@ public class CPInfo {
 	 * @return id
 	 */
 	@Id
-	@Column(name = "id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "id")
 	public long getId() {
 		return id;
 	}
@@ -35,6 +71,36 @@ public class CPInfo {
 	@Column(name = "name")
 	public String getName() {
 		return name;
+	}
+
+	/**
+	 * 设置 contractStartTime
+	 * 
+	 * @param contractStartTime
+	 *            contractStartTime
+	 */
+	public void setContractStartTime(String contractStartTime) {
+		this.contractStartTime = contractStartTime;
+	}
+
+	/**
+	 * 设置 contractStatus
+	 * 
+	 * @param contractStatus
+	 *            contractStatus
+	 */
+	public void setContractStatus(int contractStatus) {
+		this.contractStatus = contractStatus;
+	}
+
+	/**
+	 * 设置 contractStopTime
+	 * 
+	 * @param contractStopTime
+	 *            contractStopTime
+	 */
+	public void setContractStopTime(String contractStopTime) {
+		this.contractStopTime = contractStopTime;
 	}
 
 	/**
