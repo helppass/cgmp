@@ -11,8 +11,12 @@ import javax.persistence.Table;
 @Table(name = "t_test_user")
 public class TestUserInfo {
 
+	@Id
+	@Column(name = "id")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 
+	@Column(name = "username")
 	private String username;
 
 	/**
@@ -20,9 +24,6 @@ public class TestUserInfo {
 	 * 
 	 * @return id
 	 */
-	@Id
-	@Column(name = "id")
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	public long getId() {
 		return id;
 	}
@@ -32,7 +33,6 @@ public class TestUserInfo {
 	 * 
 	 * @return username
 	 */
-	@Column(name = "username")
 	public String getUsername() {
 		return username;
 	}

@@ -22,6 +22,7 @@ public class TestProc {
 			TestUserInfo info = new TestUserInfo();
 			info.setUsername(RandomStringUtils.randomAlphabetic(5));
 			System.out.println(info);
+			info.setId(10);
 			testUserDao.save(info);
 			System.out.println(info.getId());
 			System.out.println("============");

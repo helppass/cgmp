@@ -11,30 +11,86 @@ import javax.persistence.Table;
 @Table(name = "t_sp_sync_rule")
 public class SPSyncRule {
 
+	@Column(name = "cp_fee_point_id")
+	private long cpFeePointId;
+
+	@Column(name = "cp_id")
+	private long cpId;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "id")
 	private long id;
 
-	private String name;
+	@Column(name = "sp_id")
+	private long spId;
+
+	@Column(name = "sync_address")
+	private String syncAddress;
+
+	/**
+	 * 获取 cpFeePointId
+	 * 
+	 * @return cpFeePointId
+	 */
+	public long getCpFeePointId() {
+		return cpFeePointId;
+	}
+
+	/**
+	 * 获取 cpId
+	 * 
+	 * @return cpId
+	 */
+	public long getCpId() {
+		return cpId;
+	}
 
 	/**
 	 * 获取 id
 	 * 
 	 * @return id
 	 */
-	@Id
-	@Column(name = "id")
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	public long getId() {
 		return id;
 	}
 
 	/**
-	 * 获取 name
+	 * 获取 spId
 	 * 
-	 * @return name
+	 * @return spId
 	 */
-	@Column(name = "name")
-	public String getName() {
-		return name;
+	public long getSpId() {
+		return spId;
+	}
+
+	/**
+	 * 获取 syncAddress
+	 * 
+	 * @return syncAddress
+	 */
+	public String getSyncAddress() {
+		return syncAddress;
+	}
+
+	/**
+	 * 设置 cpFeePointId
+	 * 
+	 * @param cpFeePointId
+	 *            cpFeePointId
+	 */
+	public void setCpFeePointId(long cpFeePointId) {
+		this.cpFeePointId = cpFeePointId;
+	}
+
+	/**
+	 * 设置 cpId
+	 * 
+	 * @param cpId
+	 *            cpId
+	 */
+	public void setCpId(long cpId) {
+		this.cpId = cpId;
 	}
 
 	/**
@@ -48,13 +104,23 @@ public class SPSyncRule {
 	}
 
 	/**
-	 * 设置 name
+	 * 设置 spId
 	 * 
-	 * @param name
-	 *            name
+	 * @param spId
+	 *            spId
 	 */
-	public void setName(String name) {
-		this.name = name;
+	public void setSpId(long spId) {
+		this.spId = spId;
+	}
+
+	/**
+	 * 设置 syncAddress
+	 * 
+	 * @param syncAddress
+	 *            syncAddress
+	 */
+	public void setSyncAddress(String syncAddress) {
+		this.syncAddress = syncAddress;
 	}
 
 }
