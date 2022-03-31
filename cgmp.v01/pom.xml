@@ -5,7 +5,7 @@
 	<artifactId>cgmp_v01</artifactId>
 	<version>1.0.0</version>
 	<properties>
-		<spring.version>4.1.4.RELEASE</spring.version>
+		<spring.version>5.3.18</spring.version>
 		<jetty.version>8.1.11.v20130520</jetty.version>
 		<jackson.version>2.9.10.1</jackson.version>
 	</properties>
