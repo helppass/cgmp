@@ -7,7 +7,7 @@
 	<properties>
 		<spring.version>4.1.4.RELEASE</spring.version>
 		<jetty.version>8.1.11.v20130520</jetty.version>
-		<jackson.version>2.9.10.1</jackson.version>
+		<jackson.version>2.12.6.1</jackson.version>
 	</properties>
 	<build>
 		<plugins>
